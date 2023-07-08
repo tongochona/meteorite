@@ -21,11 +21,12 @@ def new_meteorite():
     diameter=random.randint(30,200)
     color=random.choice(COLOR_METEORITE)
     image=random.choice(my_meteorite)
+    image1=random.choice(my_image)
     image2=create_image(image,diameter)
     x=random.randint(0,700)
     xVelocity=random.randint(-3,3)
     yVelocity = random.randint(4, 10)
-    return Meteorite(canvas, x,-diameter, diameter, image2,color, xVelocity, yVelocity,NW)
+    return Meteorite(canvas, x,-diameter, diameter, image1,color, xVelocity, yVelocity,NW)
 #create multi meteorite
 def rain_meteorite():
     global continue_play

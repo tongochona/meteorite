@@ -4,7 +4,7 @@ import time
 class Meteorite:
     def __init__(self,canvas, x, y, diameter, image,color, xVelocity, yVerlocity,locate):
         self.meteorite=canvas.create_rectangle(x, y, x+diameter, y+diameter, fill=color)
-        #self.meteorite=canvas.create_image(x, y, image=image, anchor=locate)
+        #self.meteorite=canvas.create_image(x, y, image=image, anchor=locate)   # create image for asteroid
         self.xVelocity=xVelocity
         self.yVelocity=yVerlocity
         self.canvas=canvas
